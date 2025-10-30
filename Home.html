@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Timóteo de Azevedo — Music Producer & Sound Designer</title>
+  <meta name="description" content="Timóteo de Azevedo — music producer and sound designer based in Lisbon. Also releases as Random Gods.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f0f12;--card:#0f1720;--muted:#9aa6b2;--accent:#e4b762;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial; margin:0; background:linear-gradient(180deg,#071019 0%, #0f1320 100%); color:#eaf2f8; -webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:0 auto;padding:36px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;gap:16px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#c77);display:flex;align-items:center;justify-content:center;font-weight:800;color:#071019}
+    h1{font-size:22px;margin:0}
+    p.lead{margin:4px 0 0;color:var(--muted);font-size:14px}
+
+    /* hero */
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:32px;align-items:start;margin-bottom:40px}
+    .bio{background:var(--glass);padding:28px;border-radius:14px;box-shadow:0 6px 24px rgba(2,6,23,0.6)}
+    .bio h2{margin-top:0;font-size:20px}
+    .bio p{color:var(--muted);line-height:1.6}
+    .actions{margin-top:18px;display:flex;gap:12px}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.08);padding:10px 14px;border-radius:10px;color:#fff;text-decoration:none;font-weight:600}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),#f1c87a);color:#071019;border:0}
+
+    /* audio card */
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px;margin-bottom:12px}
+    .track{display:flex;gap:12px;align-items:center}
+    .track .meta{flex:1}
+    .track h4{margin:0;font-size:15px}
+    .track p{margin:6px 0 0;color:var(--muted);font-size:13px}
+
+    /* portfolio grid */
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+
+    /* contact */
+    footer{margin-top:40px;padding:22px;border-radius:12px;background:linear-gradient(180deg,#07101a 0%, #0b1220 100%)}
+    .footer-grid{display:flex;gap:20px;align-items:center;justify-content:space-between}
+    .social a{color:var(--muted);text-decoration:none;margin-right:12px}
+
+    /* responsive */
+    @media (max-width:900px){.hero{grid-template-columns:1fr} .grid{grid-template-columns:1fr}}    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">T</div>
+        <div>
+          <h1>Timóteo de Azevedo</h1>
+          <p class="lead">Music producer & sound designer — Lisbon • also releases as <strong>Random Gods</strong></p>
+        </div>
+      </div>
+      <nav>
+        <a class="btn" href="#portfolio">Portfolio</a>
+        <a class="btn" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="bio">
+        <h2>About</h2>
+        <p>I’m Timóteo de Azevedo — a music producer and sound designer based in Lisbon. I create original music and sonic worlds for film, commercials and visual media. I also produce and perform electronic music under the alias <strong>Random Gods</strong>.</p>
+
+        <div class="actions">
+          <a class="btn primary" href="#contact">Hire / Contact</a>
+          <a class="btn" href="#portfolio">Listen</a>
+        </div>
+
+        <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:18px 0">
+
+        <h3 style="margin:0 0 8px">Services</h3>
+        <ul style="padding-left:18px;color:var(--muted);margin:0">
+          <li>Original composition for film & ads</li>
+          <li>Sound design & foley</li>
+          <li>Mixing & mastering for visual media</li>
+        </ul>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3 style="margin:0 0 8px">Featured Tracks</h3>
+
+          <!-- Replace src attributes with your hosted audio files or streaming links -->
+          <div class="track">
+            <div class="meta">
+              <h4>Track Title — Film Cue</h4>
+              <p>Music for a short film — 1:45</p>
+            </div>
+            <audio controls preload="none" src="#"></audio>
+          </div>
+
+          <div class="track" style="margin-top:12px">
+            <div class="meta">
+              <h4>Commercial OST</h4>
+              <p>Original music for advertising — 0:45</p>
+            </div>
+            <audio controls preload="none" src="#"></audio>
+          </div>
+
+        </div>
+
+        <div style="height:16px"></div>
+
+        <div class="card">
+          <h3 style="margin:0 0 8px">Random Gods</h3>
+          <p style="color:var(--muted);margin:0 0 12px">Electronic music project. Releases, live sets and experiments.</p>
+          <a class="btn" href="#">Listen on Bandcamp</a>
+        </div>
+      </aside>
+    </section>
+
+    <section id="portfolio">
+      <h2 style="margin-top:0">Portfolio</h2>
+      <div class="grid">
+        <div class="card">
+          <h4 style="margin:0 0 6px">Film — Title / Year</h4>
+          <p style="color:var(--muted);margin:0 0 8px">Short description of the piece and role (composition / sound design).</p>
+          <audio controls preload="none" src="#"></audio>
+        </div>
+
+        <div class="card">
+          <h4 style="margin:0 0 6px">Commercial — Brand</h4>
+          <p style="color:var(--muted);margin:0 0 8px">Brief notes about the project.</p>
+          <audio controls preload="none" src="#"></audio>
+        </div>
+
+        <div class="card">
+          <h4 style="margin:0 0 6px">Sound Design — Project</h4>
+          <p style="color:var(--muted);margin:0 0 8px">Field recordings, processed textures.</p>
+          <audio controls preload="none" src="#"></audio>
+        </div>
+
+        <div class="card">
+          <h4 style="margin:0 0 6px">Random Gods — Single/EP</h4>
+          <p style="color:var(--muted);margin:0 0 8px">Electronic release — live set available.</p>
+          <audio controls preload="none" src="#"></audio>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="footer-grid">
+        <div>
+          <h3 style="margin:0">Contact</h3>
+          <p style="color:var(--muted);margin:6px 0 0">For commissions, sync licensing or bookings: <a href="mailto:contact@timoteodeazevedo.pt" style="color:var(--accent);text-decoration:none">contact@timoteodeazevedo.pt</a></p>
+        </div>
+
+        <div style="max-width:420px">
+          <!-- Simple contact form using Formspree - replace action with your endpoint -->
+          <form action="https://formspree.io/f/your-form-id" method="POST">
+            <div style="display:flex;gap:8px;margin-bottom:8px">
+              <input name="name" placeholder="Name" required style="flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
+            </div>
+            <div style="margin-bottom:8px">
+              <input name="email" placeholder="Email" type="email" required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
+            </div>
+            <div style="margin-bottom:8px">
+              <textarea name="message" placeholder="Message" rows="3" required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit"></textarea>
+            </div>
+            <div style="display:flex;gap:8px;justify-content:flex-end">
+              <button class="btn primary" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div style="margin-top:18px;display:flex;align-items:center;justify-content:space-between">
+        <div style="color:var(--muted)">© Timóteo de Azevedo</div>
+        <div class="social">
+          <a href="#">SoundCloud</a>
+          <a href="#">Bandcamp</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
