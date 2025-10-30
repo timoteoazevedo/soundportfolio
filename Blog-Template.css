@@ -1,0 +1,149 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 1259px;
+}
+
+.u-section-1 .u-image-1 {
+  width: 869px;
+  height: 579px;
+  margin: 156px 134px 0 auto;
+}
+
+.u-section-1 .u-group-1 {
+  width: 282px;
+  min-height: 101px;
+  height: auto;
+  margin: -390px auto 0 24px;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.u-section-1 .u-text-1 {
+  font-size: 6rem;
+  font-family: Helvetica;
+  margin: -26px 12px;
+}
+
+.u-section-1 .u-text-2 {
+  font-family: Helvetica;
+  margin: 338px 570px 0 152px;
+}
+
+.u-section-1 .u-text-3 {
+  font-family: Helvetica;
+  margin: 24px 570px 60px 152px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-image-1 {
+    margin-right: 71px;
+  }
+
+  .u-section-1 .u-group-1 {
+    height: auto;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .u-section-1 .u-text-2 {
+    font-weight: 400;
+    margin-right: 470px;
+    margin-left: 52px;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-right: 470px;
+    margin-left: 52px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 1160px;
+  }
+
+  .u-section-1 .u-image-1 {
+    width: 720px;
+    height: 480px;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-group-1 {
+    margin-top: -291px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-right: 302px;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-right: 302px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 1040px;
+  }
+
+  .u-section-1 .u-image-1 {
+    width: 540px;
+    height: 360px;
+  }
+
+  .u-section-1 .u-group-1 {
+    margin-top: -171px;
+  }
+
+  .u-section-1 .u-text-1 {
+    font-size: 5.333333333333333rem;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-right: 122px;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-right: 122px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 907px;
+  }
+
+  .u-section-1 .u-image-1 {
+    width: 340px;
+    height: 227px;
+  }
+
+  .u-section-1 .u-group-1 {
+    margin-top: -38px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-right: 0;
+  }
+}h1 { 
+    text-align: center; 
+    background-color: white; 
+}
+/* page-custom-fonts */
+@font-face {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/Helvetica.ttf);
+}
