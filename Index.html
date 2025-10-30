@@ -7,9 +7,9 @@
   <meta name="description" content="Timóteo de Azevedo — music producer and sound designer based in Lisbon. Also releases as Random Gods.">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#0f0f12;--card:#0f1720;--muted:#9aa6b2;--accent:#e4b762;--glass:rgba(255,255,255,0.03)}
+    :root{--bg:#ffffff;--card:#f8f8f8;--muted:#6e6e6e;--accent:#e4b762;--glass:rgba(255,255,255,0.8)}
     *{box-sizing:border-box}
-    body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial; margin:0; background:linear-gradient(180deg,#071019 0%, #0f1320 100%); color:#eaf2f8; -webkit-font-smoothing:antialiased}
+    body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial; margin:0; background:#ffffff; color:#071019; -webkit-font-smoothing:antialiased}
     .container{max-width:1100px;margin:0 auto;padding:36px}
     header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
     .brand{display:flex;gap:16px;align-items:center}
@@ -19,15 +19,39 @@
 
     /* hero */
     .hero{display:grid;grid-template-columns:1fr 380px;gap:32px;align-items:start;margin-bottom:40px}
-    .bio{background:var(--glass);padding:28px;border-radius:14px;box-shadow:0 6px 24px rgba(2,6,23,0.6)}
+    .bio{
+      background:var(--glass);
+      padding:28px;
+      border-radius:14px;
+      box-shadow:0 6px 24px rgba(0,0,0,0.1);
+      position:relative;
+      overflow:hidden;
+    }
+    .bio::before{
+      content:"";
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background-image:url('https://raw.githubusercontent.com/timoteoazevedo/soundportfolio/main/images/timoteodeazevedo.jpg');
+      background-size:cover;
+      background-position:center;
+      opacity:0.15;
+      z-index:0;
+    }
+    .bio h2, .bio p, .bio ul, .bio .actions, .bio hr{
+      position:relative;
+      z-index:1;
+    }
     .bio h2{margin-top:0;font-size:20px}
     .bio p{color:var(--muted);line-height:1.6}
     .actions{margin-top:18px;display:flex;gap:12px}
-    .btn{background:transparent;border:1px solid rgba(255,255,255,0.08);padding:10px 14px;border-radius:10px;color:#fff;text-decoration:none;font-weight:600}
+    .btn{background:transparent;border:1px solid rgba(0,0,0,0.08);padding:10px 14px;border-radius:10px;color:#071019;text-decoration:none;font-weight:600}
     .btn.primary{background:linear-gradient(90deg,var(--accent),#f1c87a);color:#071019;border:0}
 
     /* audio card */
-    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px;margin-bottom:12px}
+    .card{background:var(--card);padding:18px;border-radius:12px;margin-bottom:12px;box-shadow:0 4px 12px rgba(0,0,0,0.05)}
     .track{display:flex;gap:12px;align-items:center}
     .track .meta{flex:1}
     .track h4{margin:0;font-size:15px}
@@ -37,7 +61,7 @@
     .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
 
     /* contact */
-    footer{margin-top:40px;padding:22px;border-radius:12px;background:linear-gradient(180deg,#07101a 0%, #0b1220 100%)}
+    footer{margin-top:40px;padding:22px;border-radius:12px;background:#f5f5f5}
     .footer-grid{display:flex;gap:20px;align-items:center;justify-content:space-between}
     .social a{color:var(--muted);text-decoration:none;margin-right:12px}
 
@@ -71,7 +95,7 @@
           <a class="btn" href="#portfolio">Listen</a>
         </div>
 
-        <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:18px 0">
+        <hr style="border:none;border-top:1px solid rgba(0,0,0,0.1);margin:18px 0">
 
         <h3 style="margin:0 0 8px">Services</h3>
         <ul style="padding-left:18px;color:var(--muted);margin:0">
@@ -85,7 +109,6 @@
         <div class="card">
           <h3 style="margin:0 0 8px">Featured Tracks</h3>
 
-          <!-- Replace src attributes with your hosted audio files or streaming links -->
           <div class="track">
             <div class="meta">
               <h4>Track Title — Film Cue</h4>
@@ -151,16 +174,15 @@
         </div>
 
         <div style="max-width:420px">
-          <!-- Simple contact form using Formspree - replace action with your endpoint -->
           <form action="https://formspree.io/f/your-form-id" method="POST">
             <div style="display:flex;gap:8px;margin-bottom:8px">
-              <input name="name" placeholder="Name" required style="flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
+              <input name="name" placeholder="Name" required style="flex:1;padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.1);background:transparent;color:inherit">
             </div>
             <div style="margin-bottom:8px">
-              <input name="email" placeholder="Email" type="email" required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
+              <input name="email" placeholder="Email" type="email" required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.1);background:transparent;color:inherit">
             </div>
             <div style="margin-bottom:8px">
-              <textarea name="message" placeholder="Message" rows="3" required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit"></textarea>
+              <textarea name="message" placeholder="Message" rows="3" required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.1);background:transparent;color:inherit"></textarea>
             </div>
             <div style="display:flex;gap:8px;justify-content:flex-end">
               <button class="btn primary" type="submit">Send</button>
