@@ -124,7 +124,8 @@
 
 .u-section-2 .u-text-3 {
   font-family: Helvetica;
-  margin: -51px 993px 111px 131px;
+  font-size: 2;
+  margin: 34px auto 0;
 }
 
 @media (max-width: 1199px) {
